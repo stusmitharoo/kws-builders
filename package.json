@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "kws-gatsby",
+  "description": "kws builders",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Stuart Smith",
   "dependencies": {
     "gatsby": "^2.20.12",
     "gatsby-plugin-manifest": "^2.3.3",
@@ -15,21 +15,14 @@
     "react-helmet": "^5.2.1",
     "react-images": "^1.0.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "develop": "gatsby develop"
   },
-  "devDependencies": {
-    "prettier": "^2.0.2"
-  },
+  "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/stusmitharoo/kws-gatsby"
   }
 }
