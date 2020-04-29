@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Carousel, { Modal, ModalGateway } from 'react-images'
+import GalleryItems from './GalleryItems'
 
 const Gallery = ({ images }) => {
   const [lightboxIsOpen, setLightboxIsOpen] = useState(false)
@@ -14,27 +15,9 @@ const Gallery = ({ images }) => {
   const renderGallery = images => {
     if (!images) return
 
-    const gallery = images.map((obj, i) => {
-      return (
-        <article className="6u 12u$(xsmall) work-item" key={i}>
-          <a
-            className="image fit thumb"
-            href={obj.source}
-            onClick={e => {
-              e.preventDefault()
-              toggleLightbox(i)
-            }}
-          >
-            <img src={obj.thumbnail} />
-          </a>
+    const gallery = <GalleryItems images={images} toggleLightbox={toggleLightbox} />
 
-          <h3>{obj.caption}</h3>
-          <p>{obj.description}</p>
-        </article>
-      )
-    })
-
-    return <div className="row">{gallery}</div>
+    return gallery
   }
   return (
     <div>
@@ -53,6 +36,7 @@ const Gallery = ({ images }) => {
 Gallery.displayName = 'Gallery'
 Gallery.propTypes = {
   images: PropTypes.array,
+  toggleLightbox: PropTypes.func,
 }
 
 export default Gallery

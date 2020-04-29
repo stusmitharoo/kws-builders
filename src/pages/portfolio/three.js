@@ -2,23 +2,22 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 
-import full01 from '../assets/images/fulls/01.jpg'
-import full02 from '../assets/images/fulls/02.jpg'
-import full03 from '../assets/images/fulls/03.jpg'
-import full04 from '../assets/images/fulls/04.jpg'
-import full05 from '../assets/images/fulls/05.jpg'
-import full06 from '../assets/images/fulls/06.jpg'
-import thumb01 from '../assets/images/thumbs/01.jpg'
-import thumb02 from '../assets/images/thumbs/02.jpg'
-import thumb03 from '../assets/images/thumbs/03.jpg'
-import thumb04 from '../assets/images/thumbs/04.jpg'
-import thumb05 from '../assets/images/thumbs/05.jpg'
-import thumb06 from '../assets/images/thumbs/06.jpg'
-import Gallery from '../components/Gallery'
-import Layout from '../components/layout'
-import ContactForm from '../components/ContactForm'
+import full01 from '../../assets/images/fulls/01.jpg'
+import full02 from '../../assets/images/fulls/02.jpg'
+import full03 from '../../assets/images/fulls/03.jpg'
+import full04 from '../../assets/images/fulls/04.jpg'
+import full05 from '../../assets/images/fulls/05.jpg'
+import full06 from '../../assets/images/fulls/06.jpg'
+import thumb01 from '../../assets/images/thumbs/01.jpg'
+import thumb02 from '../../assets/images/thumbs/02.jpg'
+import thumb03 from '../../assets/images/thumbs/03.jpg'
+import thumb04 from '../../assets/images/thumbs/04.jpg'
+import thumb05 from '../../assets/images/thumbs/05.jpg'
+import thumb06 from '../../assets/images/thumbs/06.jpg'
+import Gallery from '../../components/Gallery'
+import Layout from '../../components/layout'
 
-const RECENT_IMAGES = [
+const THREE_IMAGES = [
   {
     id: '1',
     source: full01,
@@ -63,46 +62,28 @@ const RECENT_IMAGES = [
   },
 ]
 
-const HomeIndex = () => {
-  const siteTitle = 'KWS builder'
-  const siteDescription = 'KWS builders portfolio static site'
 
+const one = () => {
+  const siteTitle = 'KWS builder';
+  const siteDescription = 'KWS builders portfolio static site';
   return (
     <Layout>
       <Helmet>
         <title>{siteTitle}</title>
         <meta name="description" content={siteDescription} />
       </Helmet>
-
       <div id="main">
         <section id="one">
           <header className="major">
             <h2>
-              A family run business with 40 years experience,
-              <br />
-              Situated on the Hampshire Surrey border.
+              Barn conversion.
             </h2>
           </header>
-          <p>
-            KWS builders undertake various types of work including extensions,
-            new builds or garage conversions to name a few. With 40 years experience
-            you can be sure our builds are to exacting standards and can be confident
-            of a nice timely build.
-          </p>
-          <ul className="actions">
-            <Link
-              to='/aboutUs'
-              className='button'>
-              Learn More about us
-            </Link>
-          </ul>
         </section>
 
         <section id="two">
-          <h2>Recent Work</h2>
-
           <Gallery
-            images={RECENT_IMAGES.map(
+            images={THREE_IMAGES.map(
               ({ id, source, thumbnail, caption, description }) => ({
                 source,
                 thumbnail,
@@ -117,13 +98,12 @@ const HomeIndex = () => {
               to='/portfolio'
               className='button'>
               Full Portfolio
-            </Link>
+    </Link>
           </ul>
         </section>
-        <ContactForm />
       </div>
     </Layout>
   )
 }
 
-export default HomeIndex
+export default one
