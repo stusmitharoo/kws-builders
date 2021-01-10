@@ -549,6 +549,18 @@
 				width: 100%;
 			}
 		}
+
+		&.logo {
+			width: 18rem;
+
+			&:before {
+				display: none;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
 	}
 
 /* List */
@@ -945,6 +957,11 @@
 		.image.avatar {
 			margin: 0 0 (_size(element-margin) * 0.5) 0;
 			width: 6.25em;
+		}
+
+		.image.logo {
+			margin: 0 0 (_size(element-margin) * 0.5) 0;
+			width: 10em;
 		}
 	}
 

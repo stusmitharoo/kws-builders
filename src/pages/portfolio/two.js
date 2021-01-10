@@ -2,18 +2,14 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 
-import full01 from '../../assets/images/fulls/01.jpg'
-import full02 from '../../assets/images/fulls/02.jpg'
-import full03 from '../../assets/images/fulls/03.jpg'
-import full04 from '../../assets/images/fulls/04.jpg'
-import full05 from '../../assets/images/fulls/05.jpg'
-import full06 from '../../assets/images/fulls/06.jpg'
-import thumb01 from '../../assets/images/thumbs/01.jpg'
-import thumb02 from '../../assets/images/thumbs/02.jpg'
-import thumb03 from '../../assets/images/thumbs/03.jpg'
-import thumb04 from '../../assets/images/thumbs/04.jpg'
-import thumb05 from '../../assets/images/thumbs/05.jpg'
-import thumb06 from '../../assets/images/thumbs/06.jpg'
+import full01 from '../../assets/images/barn/tiles.jpg'
+import full02 from '../../assets/images/barn/topFloor.jpg'
+import full03 from '../../assets/images/barn/doors.jpg'
+import full04 from '../../assets/images/barn/interior.jpg'
+import full05 from '../../assets/images/barn/stairs.jpg'
+import full06 from '../../assets/images/barn/upstairs.jpg'
+import full07 from '../../assets/images/barn/hall.jpg'
+import full08 from '../../assets/images/barn/finish.jpg'
 import Gallery from '../../components/Gallery'
 import Layout from '../../components/layout'
 
@@ -21,44 +17,58 @@ const TWO_IMAGES = [
   {
     id: '1',
     source: full01,
-    thumbnail: thumb01,
-    caption: 'kitchen',
-    description: 'The kitchen has porcelain flooring and a bespoke work surface.',
+    thumbnail: full01,
+    caption: 'Removing tiles',
+    description: 'Stripping the roof of old tiles to help inspect the old roof.',
   },
   {
     id: '2',
     source: full02,
-    thumbnail: thumb02,
-    caption: 'Single bedroom',
-    description: 'a single bedroom or office space.',
+    thumbnail: full02,
+    caption: 'Strengthen and replace',
+    description: 'Replace and strengthen the roof to allow the addition of an upper floor.',
   },
   {
     id: '3',
     source: full03,
-    thumbnail: thumb03,
-    caption: 'Master bedroom',
-    description: 'The master bedroom has newly fitted radiators and en-suite.',
+    thumbnail: full03,
+    caption: 'New doors',
+    description: 'New access to th courtyard.',
   },
   {
     id: '4',
     source: full04,
-    thumbnail: thumb04,
-    caption: 'Shower room',
-    description: 'the shower room is off the master bedroom and has a walk in area.',
+    thumbnail: full04,
+    caption: 'Open room',
+    description: 'A new modern open living space.',
   },
   {
     id: '5',
     source: full05,
-    thumbnail: thumb05,
-    caption: 'Bi-fold doors',
-    description: 'Bespoke fitted Bi-fold doors to the back garden.',
+    thumbnail: full05,
+    caption: 'Spiral staircase',
+    description: 'Space saving staircase to new living quarters.',
   },
   {
     id: '6',
     source: full06,
-    thumbnail: thumb06,
-    caption: 'Patio area',
-    description: 'Straight out from the kitchen to the patio built with indian sandstone',
+    thumbnail: full06,
+    caption: 'Opening up',
+    description: 'Opening into the new sleeping areas.',
+  },
+  {
+    id: '7',
+    source: full07,
+    thumbnail: full07,
+    caption: 'Space saving',
+    description: 'Hallway and rooms organised into space saving roof area.',
+  },
+  {
+    id: '8',
+    source: full08,
+    thumbnail: full08,
+    caption: 'Finish',
+    description: 'new shingles and roof tiles on a completed barn conversion.',
   },
 ]
 
@@ -76,7 +86,7 @@ const one = () => {
         <section id="one">
           <header className="major">
             <h2>
-              New build.
+              Barn conversion.
             </h2>
           </header>
         </section>
@@ -97,8 +107,8 @@ const one = () => {
             <Link
               to='/portfolio'
               className='button'>
-              Full Portfolio
-    </Link>
+              Back
+            </Link>
           </ul>
         </section>
       </div>

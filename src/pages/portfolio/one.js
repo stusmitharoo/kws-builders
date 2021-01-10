@@ -2,18 +2,13 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 
-import full01 from '../../assets/images/fulls/01.jpg'
-import full02 from '../../assets/images/fulls/02.jpg'
-import full03 from '../../assets/images/fulls/03.jpg'
-import full04 from '../../assets/images/fulls/04.jpg'
-import full05 from '../../assets/images/fulls/05.jpg'
-import full06 from '../../assets/images/fulls/06.jpg'
-import thumb01 from '../../assets/images/thumbs/01.jpg'
-import thumb02 from '../../assets/images/thumbs/02.jpg'
-import thumb03 from '../../assets/images/thumbs/03.jpg'
-import thumb04 from '../../assets/images/thumbs/04.jpg'
-import thumb05 from '../../assets/images/thumbs/05.jpg'
-import thumb06 from '../../assets/images/thumbs/06.jpg'
+import full01 from '../../assets/images/double/dayOne.jpg'
+import full02 from '../../assets/images/double/clearing.jpg'
+import full03 from '../../assets/images/double/demolition.jpg'
+import full04 from '../../assets/images/double/scaffolding.jpg'
+import full05 from '../../assets/images/double/porch.jpg'
+import full06 from '../../assets/images/double/floor.jpg'
+import full07 from '../../assets/images/double/finish.jpg'
 import Gallery from '../../components/Gallery'
 import Layout from '../../components/layout'
 
@@ -21,44 +16,51 @@ const ONE_IMAGES = [
   {
     id: '1',
     source: full01,
-    thumbnail: thumb01,
-    caption: 'kitchen',
-    description: 'The kitchen has porcelain flooring and a bespoke work surface.',
+    thumbnail: full01,
+    caption: 'Day one',
+    description: 'This is what we had to work with.',
   },
   {
     id: '2',
     source: full02,
-    thumbnail: thumb02,
-    caption: 'Single bedroom',
-    description: 'a single bedroom or office space.',
+    thumbnail: full02,
+    caption: 'Clearence',
+    description: 'Clearing the site with the correct tools.',
   },
   {
     id: '3',
     source: full03,
-    thumbnail: thumb03,
-    caption: 'Master bedroom',
-    description: 'The master bedroom has newly fitted radiators and en-suite.',
+    thumbnail: full03,
+    caption: 'Demolition',
+    description: 'Removing part of the building ready for new foundations.',
   },
   {
     id: '4',
     source: full04,
-    thumbnail: thumb04,
-    caption: 'Shower room',
-    description: 'the shower room is off the master bedroom and has a walk in area.',
+    thumbnail: full04,
+    caption: 'Building up',
+    description: 'Scaffolding chasing each floor as we build and the roof going on.',
   },
   {
     id: '5',
     source: full05,
-    thumbnail: thumb05,
-    caption: 'Bi-fold doors',
-    description: 'Bespoke fitted Bi-fold doors to the back garden.',
+    thumbnail: full05,
+    caption: 'finishing the porch',
+    description: 'A new porch being finished.',
   },
   {
     id: '6',
     source: full06,
-    thumbnail: thumb06,
-    caption: 'Patio area',
-    description: 'Straight out from the kitchen to the patio built with indian sandstone',
+    thumbnail: full06,
+    caption: 'Under floor heating',
+    description: 'The kitchen having under floor heating being fitted.',
+  },
+  {
+    id: '7',
+    source: full07,
+    thumbnail: full07,
+    caption: 'finish',
+    description: 'The last 10% finishing up the job.',
   },
 ]
 
@@ -76,7 +78,7 @@ const one = () => {
         <section id="one">
           <header className="major">
             <h2>
-              Extension.
+              Double storey extension.
             </h2>
           </header>
         </section>
@@ -97,7 +99,7 @@ const one = () => {
             <Link
               to='/portfolio'
               className='button'>
-              Full Portfolio
+              Back
             </Link>
           </ul>
         </section>

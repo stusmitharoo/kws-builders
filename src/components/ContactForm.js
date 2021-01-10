@@ -4,11 +4,11 @@ const ContactForm = () => {
   return (
     <section id="three">
       <h2>Get In Touch</h2>
-      <p>
+      {/* <p>
         If you would like to discuss any projects you may have in mind please fill the form below.
-          </p>
+          </p> */}
       <div className="row">
-        <div className="8u 12u$(small)">
+        {/* <div className="8u 12u$(small)">
           <form method="post" action="#">
             <div className="row uniform 50%">
               <div className="6u 12u$(xsmall)">
@@ -42,7 +42,7 @@ const ContactForm = () => {
               </li>
             </ul>
           </form>
-        </div>
+        </div> */}
         <div className="4u 12u$(small)">
           <ul className="labeled-icons">
             <li>

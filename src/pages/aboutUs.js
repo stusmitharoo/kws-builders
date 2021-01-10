@@ -52,7 +52,7 @@ const aboutUs = () => {
               e.preventDefault()
             }}
           >
-            <img src={obj.thumbnail} />
+            <img src={obj.thumbnail} alt='' />
           </a>
 
           <h3>{obj.caption}</h3>
